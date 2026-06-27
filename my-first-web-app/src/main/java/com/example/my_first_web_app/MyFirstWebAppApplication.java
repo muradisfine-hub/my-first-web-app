@@ -31,7 +31,7 @@ public class MyFirstWebAppApplication {
 	}
 
 	@GetMapping("/anthem")
-	public String seyAnthem() {
+	public String sayAnthem() {
 		return "Снова еду я за долбоёбом,\n" +
 				"Пацану, видно, пиздец хуёво.\n" +
 				"Девяносто ехать он не хочет,\n" +
