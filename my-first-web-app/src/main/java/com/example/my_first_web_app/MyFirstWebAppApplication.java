@@ -21,7 +21,7 @@ public class MyFirstWebAppApplication {
 
 	@GetMapping("/test")
 	public String sayHello(@RequestParam(value = "name", defaultValue = "World") String name) {
-		return "Hello " + name + "!";
+		return "<h1 style='color: blue; font-size: 48px;'>Hi</h1>";
 	}
 
 	@GetMapping("/numbers")
@@ -32,9 +32,9 @@ public class MyFirstWebAppApplication {
 
 	@GetMapping("/anthem")
 	public String sayAnthem() {
-		return "Снова еду я за долбоёбом,\n" +
+		return "<h1 style='color: blue; font-size: 48px;'>Снова еду я за долбоёбом,\n" +
 				"Пацану, видно, пиздец хуёво.\n" +
 				"Девяносто ехать он не хочет,\n" +
-				"Поэтому там едет, дрочит.";
+				"Поэтому там едет, дрочит.</h1>";
 	}
 }
